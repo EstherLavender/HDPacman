@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 {
   "name": "pacman",
   "version": "0.1.0",
@@ -26,11 +27,17 @@
     "styled-components": "^5.2.1",
     "typescript": "4.1.3",
     "xstate": "^4.7.5"
+   
+
   },
   "scripts": {
     "compile": "tsc --noEmit",
     "compile:watch": "tsc --noEmit --watch",
     "start": "react-scripts --openssl-legacy-provider start",
+    "local-dev:start":"ts-node scripts/start-local-dev.ts",
+    "contracts:builder":"npx hardhat compile",
+    "contracts:deploy":"ts-node scripts/deploy-contracts.ts",
+    "contracts:execute": "ts-node scripts/execute-contracts.ts",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "test:ci": "CI=true react-scripts test",
@@ -64,5 +71,7 @@
       "pre-push": "yarn compile && yarn lint && yarn test:ci"
     }
   },
-  "main": "index.js"
+  "main": "index.js",
+  "repository": "https://github.com/HDPacMan/HDGPACMAN.git",
+  "author": "<lavenderesther@outlook.com>"
 }

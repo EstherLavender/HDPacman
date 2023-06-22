@@ -34,3 +34,5 @@ contract PacmanRewardDistributor is AxelarExecutable {
         }
     }
 }
+//0xBeF57dA8a0FC7ffc52205D3aE4Cb0Ef47516a29a-Avalanche
+//0x54C3cA45C6596094B631b185f20d1E2c7cF7C51B-polygon
